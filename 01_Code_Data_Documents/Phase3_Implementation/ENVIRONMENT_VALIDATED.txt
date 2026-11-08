@@ -1,0 +1,57 @@
+PHASE-3 REVISION-2 VALIDATED ENVIRONMENT
+========================================
+Validation date: 20 August 2026
+Python: 3.12.13
+Platform used for supplied evidence: Linux x86_64
+Random state: 42
+
+Pinned reproducibility environment (requirements.txt)
+-----------------------------------------------------
+numpy 2.5.2
+pandas 3.0.5
+scipy 1.18.0
+scikit-learn 1.9.0
+matplotlib 3.10.8
+openpyxl 3.1.5
+joblib 1.5.3
+shap 0.52.0
+streamlit 1.62.0
+Pillow 12.3.0
+
+Observed build-runtime packages for supplied evidence
+------------------------------------------------------
+numpy 2.3.5
+pandas 2.2.3
+scipy 1.17.0
+scikit-learn 1.8.0
+matplotlib 3.10.8
+joblib 1.5.3
+shap not installed
+streamlit not installed
+
+Observed validation result
+--------------------------
+Python compilation: PASS
+Shared M1-M9 regression checks: PASS
+Complete four-domain Phase-3 pipeline: PASS
+Output verification: PASS
+Automated tests: 20 executed; 19 PASS; 1 dependency-aware SKIP
+Skipped test: Streamlit AppTest (package unavailable in build runtime)
+Dashboard backend, input guards, and app syntax: PASS
+Graphs: 22
+Persisted models: 8
+Held-out prediction rows: 2,532
+Validation-suite status: PASS
+
+Explanation fallback
+--------------------
+The supplied execution used deterministic Monte-Carlo Shapley values with
+24 permutations because the optional shap package was unavailable. With the
+pinned shap package installed, the same pipeline uses exact TreeSHAP and keeps
+the same CSV/PNG output contract.
+
+Windows note
+------------
+The launchers use .venv\Scripts\python.exe when a local Python 3.12 virtual
+environment exists. Install requirements.txt before rerunning the dashboard
+or Streamlit AppTest.

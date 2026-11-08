@@ -1,0 +1,22 @@
+{
+  "archive_file": "TRI_ResValData.zip",
+  "archive_sha256": "5898b06bf34550c2b57ea345c488d71fb24db4fbe6030225e260b062e22e840c",
+  "archive_size_bytes": 250042781,
+  "physical_cells": 94,
+  "records": 750,
+  "expected_rates_per_cell": 8,
+  "complete_eight_rate_cells": 93,
+  "incomplete_cells": {
+    "0000ED": 6
+  },
+  "known_source_exception": "Cell 0000ED has six low-rate records and no usable 1C/2C record; the authors' released func_resval_data.py also skips this cell.",
+  "resistance_values_imputed": 0,
+  "temperature_values_measured": 0,
+  "temperature_placeholder_values": 750,
+  "nominal_capacity_ah": 4.84,
+  "cutoff_voltage_v": 2.7,
+  "source_page": "https://data.matr.io/10/",
+  "source_archive_url": "https://data.matr.io/10/ResValData.zip",
+  "paper_doi": "10.1016/j.joule.2025.102010",
+  "license": "CC BY-NC 4.0"
+}
