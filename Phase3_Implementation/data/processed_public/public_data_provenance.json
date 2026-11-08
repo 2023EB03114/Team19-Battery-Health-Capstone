@@ -1,0 +1,56 @@
+{
+  "NASA": {
+    "official_source_url": "https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip",
+    "archive_file": "nasa_battery_data.zip",
+    "archive_sha256": "82302a7db4fc1b34e0b6676326610438d43b816bdf11a69d1d012a464ef2f92e",
+    "mat_files": {
+      "B0005.mat": "0eae4585baf3f200c09fe24c5ab884f1889679fc75206ca1aa19da704104f0b0",
+      "B0006.mat": "fa818ab4db5db8ab21e910b6dd6c3e20d3761bb9672089e1a4de8f96074616c5",
+      "B0007.mat": "d022afa086efaf54ab5b63f05220f5be178c8027e2fa8d68589db0e85a441a3b",
+      "B0018.mat": "d1e6c923a43ea1c9666b3a90bbb521757a067fd60b4d17dbfaa49c50b179da69"
+    }
+  },
+  "CALCE": {
+    "official_source_page": "https://calce.umd.edu/battery-data",
+    "archives": {
+      "CS2_35.zip": {
+        "url": "https://web.calce.umd.edu/batteries/data/CS2_35.zip",
+        "sha256": "84d88cb98a43c02049f16c78806a78ec19084776ea5df8a4b7c2f8f7ba4589e5"
+      },
+      "CS2_36.zip": {
+        "url": "https://web.calce.umd.edu/batteries/data/CS2_36.zip",
+        "sha256": "2e674f58bb6dc005c73bef10e87edbbd97afd041dde77a1d461a3c4ecac1b027"
+      },
+      "CS2_37.zip": {
+        "url": "https://web.calce.umd.edu/batteries/data/CS2_37.zip",
+        "sha256": "8ed8aecbcbea2bcb17f455923a974be01ea21d7389210e1912d177de5b6af4a5"
+      },
+      "CS2_38.zip": {
+        "url": "https://web.calce.umd.edu/batteries/data/CS2_38.zip",
+        "sha256": "98787427c10478425efd4f54d823805724daff1d2fcbd822b3a2d7006a1051d8"
+      }
+    }
+  },
+  "TRI": {
+    "official_source_page": "https://data.matr.io/10/",
+    "official_archive_url": "https://data.matr.io/10/ResValData.zip",
+    "paper_doi": "10.1016/j.joule.2025.102010",
+    "license": "CC BY-NC 4.0",
+    "archive_file": "TRI_ResValData.zip",
+    "archive_size_bytes": 250042781,
+    "archive_sha256": "5898b06bf34550c2b57ea345c488d71fb24db4fbe6030225e260b062e22e840c",
+    "physical_cells": 94,
+    "prepared_records": 750,
+    "prepared_file": "tri_resval_cycle_summary.csv",
+    "quality_file": "tri_resval_quality.json",
+    "known_source_exception": "Cell 0000ED has six low-rate records and no usable 1C/2C record; the authors' released processing code also skips this cell.",
+    "metadata_limitations": "Temperature and prior aging-cycle count are absent from the ResVal raw files; adapter values are declared schema placeholders and are not interpreted as measurements."
+  },
+  "Oxford": {
+    "official_source_page": "https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac",
+    "doi": "10.5287/bodleian:KO2kdmYGg",
+    "quantitative_evaluation": false,
+    "status": "Native MAT adapter contract implemented and fixture-tested; official source file not processed in this package."
+  },
+  "redistribution_note": "Raw NASA, CALCE, TRI, and Oxford source archives are not included. Only compact derived cycle-level summaries, quality metadata, official URLs, and provenance hashes are distributed."
+}
