@@ -1,0 +1,13 @@
+dataset,record_id,feature,feature_value,shap_value_min,method
+NASA,NASA_B0018_0094,cycle_count,94.0,-0.3476313388723611,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,predicted_soh_percent,75.94080270960885,0.004712654591049119,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,internal_resistance_ohm,0.153857621474739,0.002901342592585898,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,resistance_voltage_drop_v,0.3090371149739124,-0.0015527084104907847,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,load_power_w,6.978351453200172,-0.00040206666666531277,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,avg_voltage_v,3.4742697400163265,0.00015726597221377148,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,c_rate,1.004295763372804,2.0724163126336257e-15,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,voltage_sag_v,1.1127942349006426,-8.881784197001252e-16,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,min_voltage_v,2.361475505115684,-2.9605947323337506e-16,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,discharge_current_a,2.008591527749904,-2.9605947323337506e-16,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,temperature_c,31.038367458472877,0.0,deterministic Monte-Carlo Shapley (24 permutations)
+NASA,NASA_B0018_0094,thermal_stress,6.038367458472877,0.0,deterministic Monte-Carlo Shapley (24 permutations)

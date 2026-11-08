@@ -1,0 +1,24 @@
+{
+  "NASA": {
+    "status": "verified on official source-native MAT files",
+    "quantitative_evaluation": true,
+    "records": 579
+  },
+  "CALCE": {
+    "status": "verified on official source-native XLSX files",
+    "quantitative_evaluation": true,
+    "records": 3544
+  },
+  "TRI": {
+    "status": "verified on official 94-cell Maccor text archive",
+    "quantitative_evaluation": true,
+    "records": 750,
+    "physical_cells": 94,
+    "data_limitations": "Raw files do not contain measured temperature or prior aging-cycle count; temperature is a declared constant schema placeholder and cycle_count is a zero sentinel."
+  },
+  "Oxford": {
+    "status": "native MAT contract implemented and fixture-tested; official source file not executed",
+    "quantitative_evaluation": false,
+    "reason": "Official 262 MB characterization MAT file was not supplied in the project inputs."
+  }
+}
