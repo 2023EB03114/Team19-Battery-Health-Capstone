@@ -1,0 +1,217 @@
+{
+  "dataset": "NASA",
+  "label": "NASA PCoE real laboratory data",
+  "evidence_domain": "real experimental",
+  "quality": {
+    "rows_input": 579,
+    "missing_required_columns": [],
+    "duplicates_removed": 0,
+    "duplicate_key": [
+      "record_id"
+    ],
+    "numeric_coercion_nulls": {
+      "cycle_count": 0,
+      "temperature_c": 0,
+      "discharge_current_a": 0,
+      "avg_voltage_v": 0,
+      "min_voltage_v": 0,
+      "internal_resistance_ohm": 0,
+      "load_power_w": 0,
+      "rated_capacity_ah": 0,
+      "measured_capacity_ah": 0,
+      "backup_time_min": 0
+    },
+    "range_violations": {
+      "cycle_count": 0,
+      "temperature_c": 0,
+      "discharge_current_a": 0,
+      "avg_voltage_v": 0,
+      "min_voltage_v": 0,
+      "internal_resistance_ohm": 0,
+      "load_power_w": 0,
+      "rated_capacity_ah": 0,
+      "measured_capacity_ah": 0,
+      "backup_time_min": 0
+    },
+    "imputed_values": {},
+    "rows_output": 579,
+    "fatal_errors": 0,
+    "valid": true,
+    "source_file": "nasa_cycle_summary.csv",
+    "source_sha256": "e20a8021bd041b563ef87c6f412347728af8fe32e4a874b3cfdab2fcf483f958",
+    "physical_batteries": 4,
+    "source_quality": null
+  },
+  "split": {
+    "train_rows": 298,
+    "test_rows": 281,
+    "train_groups": [
+      "B0005",
+      "B0006"
+    ],
+    "test_groups": [
+      "B0007",
+      "B0018"
+    ],
+    "group_overlap": [],
+    "overlap_count": 0,
+    "pass": true
+  },
+  "m5_capacity": {
+    "MAE": 0.07370988927082497,
+    "RMSE": 0.0841448035052717,
+    "MAPE_percent": 4.668522323616094,
+    "Bias": 0.012529609354686954,
+    "R2": 0.6996646836889249
+  },
+  "m5_soh": {
+    "MAE": 3.6854944635412488,
+    "RMSE": 4.2072401752635855,
+    "MAPE_percent": 4.668522323616094,
+    "Bias": 0.6264804677343483,
+    "R2": 0.6996646836889249
+  },
+  "m4_reference_runtime": {
+    "MAE": 0.34812302304804116,
+    "RMSE": 0.3882421434699099,
+    "MAPE_percent": 0.7311547812362401,
+    "Bias": -0.34812302304804116,
+    "R2": 0.9930350756249061
+  },
+  "m4_operational_runtime": {
+    "MAE": 2.347253106671169,
+    "RMSE": 2.628469302009706,
+    "MAPE_percent": 4.9269224681272625,
+    "Bias": 0.018365983924065955,
+    "R2": 0.6807603164459161
+  },
+  "m6_ml_runtime": {
+    "MAE": 2.8255890694698444,
+    "RMSE": 3.2211875783189896,
+    "MAPE_percent": 5.96607838680963,
+    "Bias": -0.5992051228114753,
+    "R2": 0.5205502632415355
+  },
+  "m6_vs_m4_error_reduction_percent": {
+    "MAE": -20.378542111167665,
+    "RMSE": -22.54994098109101,
+    "MAPE_percent": -21.091379566144333
+  },
+  "m8_shap": {
+    "status": "pass",
+    "sample_rows": 200,
+    "runtime_features": 12,
+    "capacity_features": 10,
+    "runtime_method": "deterministic Monte-Carlo Shapley (24 permutations)",
+    "capacity_method": "deterministic Monte-Carlo Shapley (24 permutations)",
+    "optional_shap_package_available": false,
+    "optional_shap_import_error": "No module named 'shap'",
+    "representative_record_id": "NASA_B0018_0094",
+    "runtime_expected_value_min": 45.80077554144622,
+    "runtime_prediction_min": 45.45896069065255,
+    "runtime_actual_min": 42.59895
+  },
+  "m9": {
+    "health_class_accuracy_percent": 77.58007117437722,
+    "recommendation_accuracy_percent": 77.58007117437722,
+    "reference_note": "CSGB uses benchmark labels. NASA/CALCE/TRI references are deterministic threshold labels derived from measured targets, not expert annotations."
+  },
+  "persistence": {
+    "capacity_model_file": "nasa_capacity_model.joblib",
+    "capacity_model_sha256": "fdea2e49b987fc3ef9a26e3c43346ef43d2fb6c0eca5b69fea4ea0ad9a1c6fa8",
+    "runtime_model_file": "nasa_runtime_model.joblib",
+    "runtime_model_sha256": "ac09842096dfef1c49c5039e3555c1d3f24c2e450cedbe30dff9109ff8eefc69",
+    "capacity_max_abs_reload_difference": 8.881784197001252e-16,
+    "runtime_max_abs_reload_difference": 4.263256414560601e-14,
+    "tolerance": 1e-09,
+    "pass": true
+  },
+  "timing_seconds": {
+    "capacity_train_including_grouped_oof": 1.1540832159989804,
+    "capacity_inference": 0.21011799100051576,
+    "runtime_train": 0.5162804009996762,
+    "runtime_inference": 0.09999705100017309,
+    "capacity_inference_ms_per_row": 0.747750857653081,
+    "runtime_inference_ms_per_row": 0.3558613914596907
+  },
+  "per_battery": {
+    "B0007": {
+      "rows": 149,
+      "capacity": {
+        "MAE": 0.06181939438479339,
+        "RMSE": 0.06584247461494272,
+        "MAPE_percent": 3.9541276826042235,
+        "Bias": -0.05154311994811902,
+        "R2": 0.8009692127799404
+      },
+      "formula_runtime": {
+        "MAE": 2.2588109022348934,
+        "RMSE": 2.408255843119762,
+        "MAPE_percent": 4.754124718407465,
+        "Bias": -2.0345245984913958,
+        "R2": 0.6994727530452107
+      },
+      "ml_runtime": {
+        "MAE": 3.209784582677765,
+        "RMSE": 3.536631951270168,
+        "MAPE_percent": 6.815615345141669,
+        "Bias": -3.1721818698015003,
+        "R2": 0.35187564736780996
+      }
+    },
+    "B0018": {
+      "rows": 132,
+      "capacity": {
+        "MAE": 0.08713173577096668,
+        "RMSE": 0.10089104113194806,
+        "MAPE_percent": 5.474922335061313,
+        "Bias": 0.08485412955255127,
+        "R2": 0.5724456751259636
+      },
+      "formula_runtime": {
+        "MAE": 2.4470855950121164,
+        "RMSE": 2.8567203597719897,
+        "MAPE_percent": 5.12197447349279,
+        "Bias": 2.3356439898324277,
+        "R2": 0.6118830270926188
+      },
+      "ml_runtime": {
+        "MAE": 2.3919138310760553,
+        "RMSE": 2.823082370445605,
+        "MAPE_percent": 5.007131365662101,
+        "Bias": 2.305139841593932,
+        "R2": 0.6209693978998172
+      }
+    }
+  },
+  "per_rate": {},
+  "feature_contract": {
+    "health_features": [
+      "cycle_count",
+      "temperature_c",
+      "discharge_current_a",
+      "avg_voltage_v",
+      "min_voltage_v",
+      "internal_resistance_ohm",
+      "c_rate",
+      "thermal_stress",
+      "resistance_voltage_drop_v",
+      "voltage_sag_v"
+    ],
+    "runtime_features": [
+      "cycle_count",
+      "temperature_c",
+      "discharge_current_a",
+      "avg_voltage_v",
+      "min_voltage_v",
+      "internal_resistance_ohm",
+      "load_power_w",
+      "c_rate",
+      "thermal_stress",
+      "resistance_voltage_drop_v",
+      "voltage_sag_v",
+      "predicted_soh_percent"
+    ],
+    "target_leakage_check_pass": true
+  }
+}

@@ -1,0 +1,33 @@
+output,expected_class,predicted_class,count
+CALCE health class,Healthy (>=90%),Healthy (>=90%),510
+CALCE health class,Healthy (>=90%),Inspect/Reduce Load (65-79%),0
+CALCE health class,Healthy (>=90%),Monitor (80-89%),137
+CALCE health class,Healthy (>=90%),Replace Planning (<65%),0
+CALCE health class,Inspect/Reduce Load (65-79%),Healthy (>=90%),0
+CALCE health class,Inspect/Reduce Load (65-79%),Inspect/Reduce Load (65-79%),284
+CALCE health class,Inspect/Reduce Load (65-79%),Monitor (80-89%),12
+CALCE health class,Inspect/Reduce Load (65-79%),Replace Planning (<65%),49
+CALCE health class,Monitor (80-89%),Healthy (>=90%),1
+CALCE health class,Monitor (80-89%),Inspect/Reduce Load (65-79%),73
+CALCE health class,Monitor (80-89%),Monitor (80-89%),539
+CALCE health class,Monitor (80-89%),Replace Planning (<65%),0
+CALCE health class,Replace Planning (<65%),Healthy (>=90%),0
+CALCE health class,Replace Planning (<65%),Inspect/Reduce Load (65-79%),1
+CALCE health class,Replace Planning (<65%),Monitor (80-89%),0
+CALCE health class,Replace Planning (<65%),Replace Planning (<65%),273
+CALCE recommendation,Monitor more frequently,Monitor more frequently,539
+CALCE recommendation,Monitor more frequently,No action needed,1
+CALCE recommendation,Monitor more frequently,Plan replacement,0
+CALCE recommendation,Monitor more frequently,Reduce load or schedule inspection,73
+CALCE recommendation,No action needed,Monitor more frequently,137
+CALCE recommendation,No action needed,No action needed,510
+CALCE recommendation,No action needed,Plan replacement,0
+CALCE recommendation,No action needed,Reduce load or schedule inspection,0
+CALCE recommendation,Plan replacement,Monitor more frequently,0
+CALCE recommendation,Plan replacement,No action needed,0
+CALCE recommendation,Plan replacement,Plan replacement,273
+CALCE recommendation,Plan replacement,Reduce load or schedule inspection,1
+CALCE recommendation,Reduce load or schedule inspection,Monitor more frequently,12
+CALCE recommendation,Reduce load or schedule inspection,No action needed,0
+CALCE recommendation,Reduce load or schedule inspection,Plan replacement,49
+CALCE recommendation,Reduce load or schedule inspection,Reduce load or schedule inspection,284

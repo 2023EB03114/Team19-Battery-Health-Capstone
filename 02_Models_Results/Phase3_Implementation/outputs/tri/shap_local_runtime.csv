@@ -1,0 +1,13 @@
+dataset,record_id,feature,feature_value,shap_value_min,method
+TRI,TRI_0001CC_07,resistance_voltage_drop_v,0.2792400999999996,-132.51769510199858,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,voltage_sag_v,0.7953716386299554,-67.41075725877248,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,avg_voltage_v,3.4953792686299554,-63.77032477448926,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,load_power_w,16.917367462364385,-32.50799031103945,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,discharge_current_a,4.839923270757195,-29.16904583280055,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,c_rate,0.9999841466440519,-17.90701234550456,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,predicted_soh_percent,76.37725182484482,-12.578948178093682,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,internal_resistance_ohm,0.0576951501870221,0.44664519379227247,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,cycle_count,0.0,-5.329070518200751e-15,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,temperature_c,25.0,-4.440892098500626e-15,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,min_voltage_v,2.70000763,4.144832625267251e-15,deterministic Monte-Carlo Shapley (24 permutations)
+TRI,TRI_0001CC_07,thermal_stress,0.0,-2.960594732333751e-15,deterministic Monte-Carlo Shapley (24 permutations)
