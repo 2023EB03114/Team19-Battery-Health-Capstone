@@ -1,1 +1,0 @@
-[summary] watermark_like_hits=0

@@ -1,6 +1,0 @@
-HEADING STYLE COUNTS
-- Heading 1: 18
-- Heading 2: 36
-
-REMINDER
-- TOC relies on Heading styles (Heading 1/2/3...). Avoid manual numbering + direct formatting for headings.
